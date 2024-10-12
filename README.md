@@ -1,4 +1,4 @@
-## Modern Snake Game
+## 🐍 Modern Snake Game
 
 This is well Modern Snake Game you can play on your laptop or desktop.
 
