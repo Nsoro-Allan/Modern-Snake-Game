@@ -6,8 +6,11 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Modern Realistic Snake Game',
+  title: 'Modern Snake Game',
   description: 'A modern and realistic implementation of the classic Snake game',
+  icons: {
+    icon: '/favicon.png', // This path is correct - it refers to the public folder at the root
+  },
 }
 
 export default function RootLayout({
