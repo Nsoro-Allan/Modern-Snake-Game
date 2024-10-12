@@ -8,9 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Modern Snake Game',
   description: 'A modern and realistic implementation of the classic Snake game',
-  icons: {
-    icon: '/favicon.png', // This path is correct - it refers to the public folder at the root
-  },
 }
 
 export default function RootLayout({
@@ -20,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
